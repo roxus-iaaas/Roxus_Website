@@ -1,0 +1,40 @@
+.about-us-4 {
+  width: 100%;
+  background: #fff;
+  min-height: 85vh;
+  background-image: url('../../assets/images/about/houses.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .content {
+    margin-top: 24vh;
+    margin-left: 35vw;
+    .title {
+      width: 35%;
+      span {
+        font-size: 40px;
+        line-height: 50px;
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          font-size: 50px;
+          line-height: 60px;
+        }
+        color: white;
+        font-weight: bold;
+      }
+    }
+    .text {
+      margin-top: 24px;
+      width: 35%;
+      span {
+        color: white;
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          font-size: 18px;
+        }
+      }
+    }
+    .button {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.customer-1 {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url('../../assets/images/customers/houses.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .content {
+    margin-top: 75px;
+    padding-top: 10vh;
+    width: 100%;
+    padding-left: 35vw;
+    padding-right: 20vw;
+    color: white;
+
+    .left-content {
+      .large-text {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 50px;
+      }
+    }
+
+    .right-content {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../assets/styles/base";
+
+.mobile-step-desc {
+  position: absolute;
+  left: -3vh;
+  .round-step {
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: $pink;
+    font-weight: 500;
+    position: relative;
+    font-size: $pp-font-size-sm;
+    @include Responsive(Tablet_Portrait) {
+      font-size: 24px;
+    }
+    @include Responsive(Tablet_Landscape) {
+      font-size: 28px;
+    }
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: " ";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -2;
+      background: #503b9a;
+      background: -moz-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0%, #fc9107),
+        color-stop(100%, #fa106c)
+      );
+      background: -webkit-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: -o-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: -ms-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: linear-gradient(to right, #fc9107 0%, #fa106c 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9107', endColorstr='#fa106c',GradientType=1 );
+    }
+
+    &:after {
+      top: 3px;
+      bottom: 3px;
+      left: 3px;
+      right: 3px;
+      background-color: white;
+      z-index: -1;
+      opacity: 1;
+      transition: all 0.6s ease-in-out;
+    }
+
+    &:hover:after {
+      opacity: 0;
+    }
+  }
+
+  .step {
+    width: 33vw;
+    &.right {
+      .step-content {
+        width: 100%;
+        position: absolute;
+        text-align: left;
+        left: calc(20vw);
+      }
+    }
+    &.left {
+      .step-content {
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        left: calc(-40vw);
+      }
+    }
+
+    .m-title {
+      font-weight: bold;
+      color: $black;
+      font-size: 16px;
+      @include Responsive(Tablet_Portrait) {
+        font-size: 28px;
+      }
+      @include Responsive(Tablet_Landscape) {
+        font-size: 32px;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+      @include Responsive(Tablet_Portrait) {
+        font-size: 24px;
+      }
+      @include Responsive(Tablet_Landscape) {
+        font-size: 28px;
+      }
+    }
+  }
+}

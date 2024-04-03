@@ -1,0 +1,43 @@
+.about-us-3 {
+  width: 100%;
+  background: #fff;
+  min-height: 85vh;
+  position: relative;
+
+  .percent {
+    position: absolute;
+    left: 35vw;
+    z-index: 1;
+    span {
+      font-size: 160px;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 220px;
+      }
+      font-weight: 700;
+      background: linear-gradient(to right, #ff9009 0%, #fb126b 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .laptop {
+    position: absolute;
+    left: 33vw;
+    top: 7vh;
+
+    img {
+      height: 55vh;
+    }
+  }
+
+  .text {
+    position: absolute;
+    right: 23vw;
+    bottom: 10vh;
+    width: 20vw;
+    @media (min-width: 1800px) and (max-width: 2560px) {
+      font-size: 18px;
+    }
+  }
+}

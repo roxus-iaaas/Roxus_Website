@@ -1,0 +1,32 @@
+.mobile-customer-3 {
+  width: 100%;
+  background: url('../../assets/images/customers/mobile-office.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 45vh;
+  color: #fff;
+  padding-bottom: 5vh;
+  position: relative;
+  .percent {
+    padding-top: 5vh;
+    padding-left: 8vw;
+    z-index: 1;
+    span {
+      font-size: 140px;
+      line-height: 150px;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff9009 0%, #fb126b 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .text {
+    padding-left: 8vw;
+    width: 50vw;
+    span {
+      color: white;
+      font-size: 12px;
+    }
+  }
+}

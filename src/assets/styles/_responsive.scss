@@ -1,0 +1,158 @@
+@mixin Responsive($canvas) {
+  // GENERAL DEVICES
+  @if $canvas == Phone_Portrait {
+    @media only screen and (max-width: 420px) {
+      @content;
+    }
+  } @else if $canvas == Phone_Landscape {
+    @media only screen and (min-width: 421px) and (max-width: 896px) {
+      @content;
+    }
+  } @else if $canvas == Tablet_Portrait {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $canvas == Tablet_Landscape {
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+      @content;
+    }
+  } @else if $canvas == Desktop {
+    @media only screen and (min-width: 1366px) {
+      @content;
+    }
+  } @else if $canvas == HDDesktop {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  } @else if $canvas == FHDDesktop {
+    @media only screen and (min-width: 1900px) {
+      @content;
+    }
+  } @else if $canvas == UltraDesktop {
+    @media only screen and (min-width: 3840px) {
+      @content;
+    }
+  }
+
+  // SPECIFIC DEVICES
+  // iPhone 6 7 8
+  @else if $canvas == iPhone678 {
+    @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPhone678_Landscape {
+    @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPhone 6 7 8 Plus
+  @else if $canvas == iPhone678Plus {
+    @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+      @content;
+    }
+  } @else if $canvas == iPhone678Plus_Landscape {
+    @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPhoneX
+  @else if $canvas == iPhoneX {
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      @content;
+    }
+  } @else if $canvas == iPhoneX_Landscape {
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPhone 11 (~iPhone XR)
+  @else if $canvas == iPhone11 {
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPhone11_Landscape {
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPhone 11 Pro Max (~iPhone 11 Pro, iPhone XS Max)
+  @else if $canvas == iPhone11PM {
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+      @content;
+    }
+  } @else if $canvas == iPhone11PM_Landscape {
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // Samsung Galaxy S10
+  @else if $canvas == GalaxyS10 {
+    @media only screen and (device-width: 360px) and (device-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+      @content;
+    }
+  } @else if $canvas == GalaxyS10_Landscape {
+    @media only screen and (device-width: 360px) and (device-height: 760px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // Samsung Galaxy S10+
+  @else if $canvas == GalaxyS10Plus {
+    @media only screen and (device-width: 412px) and (device-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
+      @content;
+    }
+  } @else if $canvas == GalaxyS10Plus_Landscape {
+    @media only screen and (device-width: 412px) and (device-height: 869px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPad 10.2"
+  @else if $canvas == iPad102 {
+    @media only screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPad102_Landscape {
+    @media only screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPad Mini 7.9" (~ iPad PRo 9.7")
+  @else if $canvas == iPadMini79 {
+    @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPadMini79_Landscape {
+    @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPad Air 10.5" (~ iPad Pro 10.5")
+  @else if $canvas == iPadAir105 {
+    @media only screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPadAir105_Landscape {
+    @media only screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPad Pro 11"
+  @else if $canvas == iPadPro11 {
+    @media only screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPadPro11_Landscape {
+    @media only screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+  // iPad Pro 12"
+  @else if $canvas == iPadPro12 {
+    @media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if $canvas == iPadPro12_Landscape {
+    @media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.m-home4 {
+  width: 100%;
+  background: #fff;
+  min-height: 100vh;
+  position: relative;
+
+  .content {
+    margin-top: 18.5vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    .button-container,
+    .text-container {
+      margin-top: 2vh;
+    }
+    .text-container {
+      font-size: 12px;
+    }
+    .title-container {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .content2 {
+      margin-top: 8vh;
+    }
+  }
+}

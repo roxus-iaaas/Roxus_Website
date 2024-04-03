@@ -1,0 +1,35 @@
+.mobile-solution-1 {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 5vh;
+
+  .content {
+    display: block;
+    padding-left: 8vw;
+    margin-top: 12vh;
+
+    .intro {
+      width: 80vw;
+      position: relative;
+
+      .image-arrow {
+        position: absolute;
+        left: 8vw;
+        top: 0;
+        height: 180px;
+      }
+      .text {
+        padding-top: 25px;
+        span {
+          color: #43464a;
+          font-size: 33px;
+          line-height: 40px;
+          font-weight: bold;
+        }
+        span.orange {
+          color: #ff9206;
+        }
+      }
+    }
+  }
+}

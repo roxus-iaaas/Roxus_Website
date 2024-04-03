@@ -1,0 +1,47 @@
+@import "../../assets/styles/base";
+
+.contact-container {
+  background-color: #65839b !important;
+  opacity: 0.96;
+
+  .ant-modal-close-icon {
+    color: white;
+  }
+  .ant-modal-content {
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .contact-modal {
+    width: 100%;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: $m-padding;
+    @include Responsive(Phone_Portrait) {
+      padding-left: 10vw;
+      padding-right: 10vw;
+      padding-top: $m-padding-sm;
+    }
+    .text {
+      margin-bottom: $m-padding;
+      span {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        @include Responsive(Phone_Portrait) {
+          font-size: 18px;
+        }
+      }
+    }
+    .hs-form-field {
+      span {
+        font-size: 30px;
+      }
+      input {
+        font-size: 30px;
+      }
+    }
+  }
+}

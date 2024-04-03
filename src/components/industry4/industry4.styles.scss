@@ -1,0 +1,38 @@
+.industry-4 {
+  width: 100%;
+  background: #fff;
+  min-height: 85vh;
+  position: relative;
+
+  .percent {
+    position: absolute;
+    left: 35vw;
+    z-index: 1;
+    top: 5vh;
+    span {
+      font-size: 140px;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff9009 0%, #fb126b 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .laptop {
+    position: absolute;
+    left: 33vw;
+    top: 10vh;
+
+    img {
+      height: 50vh;
+    }
+  }
+
+  .text {
+    position: absolute;
+    right: 20vw;
+    bottom: 10vh;
+    width: 20vw;
+  }
+}

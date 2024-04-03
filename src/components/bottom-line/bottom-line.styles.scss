@@ -1,0 +1,16 @@
+@import "../../assets/styles/base";
+
+.bottom-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 15px;
+  @include Responsive(Phone_Portrait) {
+    height: 10px;
+  }
+  width: 100%;
+  background: -webkit-linear-gradient(left, #fc9107 0%, #fa106c 100%);
+  background: -o-linear-gradient(left, #fc9107 0%, #fa106c 100%);
+  background: -ms-linear-gradient(left, #fc9107 0%, #fa106c 100%);
+  background: linear-gradient(to left, #fc9107 0%, #fa106c 100%);
+}

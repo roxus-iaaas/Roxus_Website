@@ -1,0 +1,29 @@
+.solution-2 {
+  width: 100%;
+  background: #43464a;
+  min-height: 45vh;
+  padding-left: 35vw;
+  padding-right: 20vw;
+
+  .title {
+    padding-top: 8vh;
+    span {
+      font-weight: bold;
+      font-size: 25px;
+      color: #f9106c;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .solutions {
+    margin-bottom: 8vh;
+    span {
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 18px;
+      }
+      color: white;
+    }
+  }
+}

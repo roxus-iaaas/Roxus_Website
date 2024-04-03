@@ -1,0 +1,72 @@
+@import "../../assets/styles/base";
+
+.openmenu {
+  background-color: $black;
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+
+  .openmenu-content {
+    width: 80%;
+    padding: 20px 0 20px 0;
+    @include Responsive(Phone_Portrait) {
+      width: 84%;
+      padding: 15px 0 15px 0;
+    }
+    @include Responsive(FHDDesktop) {
+      padding: 30px 0 30px 0;
+      height: 35px;
+    }
+
+    .logo {
+      cursor: pointer;
+    }
+    .close {
+      font-size: 20px;
+      color: $secondary;
+      cursor: pointer;
+      &:hover {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .menu {
+    width: 60%;
+    display: block;
+    border-left: 1px solid $orange;
+    padding: 0 20px 0 0;
+
+    .menu-item {
+      margin-left: -3px;
+      span {
+        margin-left: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120px;
+        cursor: pointer;
+        @include Responsive(Phone_Portrait) {
+          font-size: 25px;
+          line-height: 80px;
+        }
+        @include Responsive(Phone_Landscape) {
+          font-size: 20px;
+          line-height: 60px;
+        }
+      }
+      &.active {
+        span {
+          margin-left: 24px;
+          color: $pink !important;
+        }
+
+        border-left: 6px solid $pink;
+      }
+    }
+  }
+}

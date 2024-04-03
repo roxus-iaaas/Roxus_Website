@@ -1,0 +1,11 @@
+@import "../../assets/styles/base";
+
+.our-company-container {
+  position: relative;
+  .read-more-container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: $m-padding;
+    padding-top: $m-padding;
+  }
+}

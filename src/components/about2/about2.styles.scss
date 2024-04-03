@@ -1,0 +1,80 @@
+.about-us-2 {
+  width: 100%;
+  background: #43464a;
+  min-height: 45vh;
+
+  .content {
+    display: block;
+    margin-left: 35vw;
+
+    .track-record {
+      width: 45vw;
+      position: relative;
+      .text {
+        padding-top: 20px;
+        padding-left: 20vw;
+        text-align: right;
+        span {
+          color: #fff;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 40px;
+          @media (min-width: 1800px) and (max-width: 2560px) {
+            font-size: 40px;
+            line-height: 50px;
+          }
+        }
+        span.orange {
+          color: #ff9206;
+        }
+      }
+    }
+
+    .statistics {
+      border-top: 1px solid #fff;
+      margin-top: 2vh;
+
+      .details {
+        padding-right: 20vw;
+        padding-top: 20px;
+
+        .gradient {
+          font-size: 60px;
+          line-height: 70px;
+          font-weight: bold;
+          @media (min-width: 1800px) and (max-width: 2560px) {
+            font-size: 75px;
+            line-height: 85px;
+          }
+
+          &.color1 {
+            background: linear-gradient(to right, #fc275a 0%, #fd4543 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          &.color2 {
+            background: linear-gradient(to right, #fd5437 0%, #fe6827 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          &.color3 {
+            background: linear-gradient(to right, #ff8313 0%, #ff9306 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        .text {
+          color: #fff;
+          font-size: 12px;
+          @media (min-width: 1800px) and (max-width: 2560px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

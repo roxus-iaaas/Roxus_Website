@@ -1,0 +1,33 @@
+@import "../../assets/styles/base";
+
+.about-us-5 {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  padding-top: 100px;
+  min-height: 90vh;
+
+  @include Responsive(Phone_Landscape) {
+    padding-top: $m-padding;
+    min-height: 120vh;
+  }
+
+  .how-we-work {
+    margin-right: 10vw;
+    width: 100%;
+    text-align: right;
+
+    span {
+      // text-transform: uppercase;
+      color: #fa106c;
+      font-size: 30px;
+      font-weight: bold;
+      @include Responsive(Phone_Landscape) {
+        font-size: 24px;
+      }
+      @include Responsive(FHDDesktop) {
+        font-size: 40px;
+      }
+    }
+  }
+}

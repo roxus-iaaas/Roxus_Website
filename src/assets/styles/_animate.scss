@@ -1,0 +1,55 @@
+body [data-aos-delay="10000"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="10000"].aos-animate {
+  transition-delay: 10s;
+}
+
+body [data-aos-delay="9500"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="9500"].aos-animate {
+  transition-delay: 9.5s;
+}
+
+body [data-aos-delay="9000"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="9000"].aos-animate {
+  transition-delay: 9s;
+}
+
+body [data-aos-delay="8500"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="8500"].aos-animate {
+  transition-delay: 8.5s;
+}
+
+body [data-aos-delay="8000"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="8000"].aos-animate {
+  transition-delay: 8s;
+}
+
+body [data-aos-delay="7500"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="7500"].aos-animate {
+  transition-delay: 7.5s;
+}
+
+//Blink
+
+@keyframes blink {
+  0% {
+    color: #282634;
+  }
+  50% {
+    color: rgb(36, 204, 68);
+  }
+  100% {
+    color: #282634;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: #282634;
+  }
+  50% {
+    color: rgb(36, 204, 68);
+  }
+  100% {
+    color: #282634;
+  }
+}

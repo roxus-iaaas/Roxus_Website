@@ -1,0 +1,128 @@
+@import "../../assets/styles/base";
+
+.home1 {
+  min-height: 100vh;
+  position: relative;
+  background: #282634;
+
+  .first-content {
+    padding-top: 35vh;
+    @include Responsive(FHDDesktop) {
+      padding-top: 40vh;
+    }
+    @include Responsive(Phone_Landscape) {
+      padding-top: calc(10vh + 78px);
+    }
+    display: block;
+    width: 100%;
+    .arrow-container,
+    .line-container {
+      padding-left: 20vw;
+      @include Responsive(Phone_Landscape) {
+        padding-left: 10vw;
+      }
+    }
+    .arrow-container {
+      img {
+        display: inline;
+      }
+      .left-arrow,
+      .right-arrow {
+        cursor: pointer;
+        width: 60px;
+        @include Responsive(Phone_Landscape) {
+          width: 40px;
+        }
+        @include Responsive(FHDDesktop) {
+          width: 80px;
+        }
+      }
+      .right-arrow {
+        margin-left: 1.5 * $m-padding-sm;
+      }
+    }
+    .line {
+      border-top: 1px solid white;
+    }
+
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      @include Responsive(FHDDesktop) {
+        font-size: 55px;
+      }
+      @include Responsive(Tablet_Portrait) {
+        font-size: $m-padding;
+      }
+      @include Responsive(Phone_Landscape) {
+        font-size: 28px;
+      }
+    }
+    .ant-col {
+      margin-top: 24px;
+      @include Responsive(Phone_Landscape) {
+        margin-top: 6px;
+        margin-bottom: $m-padding-sm;
+      }
+    }
+  }
+
+  .second-content {
+    width: 100%;
+    padding-left: 20vw;
+    padding-right: 10vw;
+    @include Responsive(Phone_Landscape) {
+      padding-left: 10vw;
+    }
+
+    p,
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 28px;
+      @include Responsive(Phone_Landscape) {
+        font-size: 16px;
+      }
+      @include Responsive(Tablet_Portrait) {
+        font-size: 24px;
+      }
+      @include Responsive(FHDDesktop) {
+        font-size: 32px;
+      }
+    }
+  }
+  .button-container {
+    position: absolute;
+    right: 10vw;
+    bottom: 10vh;
+    button {
+      min-width: 250px;
+      @include Responsive(Phone_Landscape) {
+        min-width: 200px;
+      }
+      @include Responsive(FHDDesktop) {
+        min-width: 300px;
+      }
+    }
+  }
+  .cloud-container {
+    position: absolute;
+    top: 15vh;
+    @include Responsive(Phone_Landscape) {
+      top: 40vh;
+    }
+    right: 10vw;
+    img {
+      height: 30vh;
+      @include Responsive(Phone_Landscape) {
+        height: 35vh;
+      }
+    }
+  }
+  .scroll-down {
+    position: absolute;
+    left: 1vw;
+    bottom: 3vh;
+  }
+}

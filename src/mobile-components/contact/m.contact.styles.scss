@@ -1,0 +1,56 @@
+@import "../../assets/styles/base";
+
+.mobile-contact {
+  position: relative;
+  width: 100%;
+  padding: $m-padding 8vw;
+
+  @include Responsive(Phone_Portrait) {
+    padding-top: $m-padding;
+  }
+
+  .content {
+    display: block;
+    width: 60vw;
+
+    .hubspot-form {
+      margin-top: $m-padding;
+    }
+  }
+  .title {
+    span {
+      color: #fa106c;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+}
+
+.find-us {
+  position: relative;
+  width: 100%;
+  padding: $m-padding 8vw;
+  padding-top: 0;
+  .title {
+    span {
+      color: #fa106c;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  .address {
+    &:first-child {
+      margin-top: $m-padding;
+    }
+    .country {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .email {
+    margin-top: $m-padding;
+    .support-content {
+      margin-top: $m-padding-sm;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.small-menu-left {
+  width: 8%;
+  display: block;
+  border-left: 1px solid #fc9107;
+  position: fixed;
+  top: 75px;
+  left: 20vw;
+  z-index: 3;
+
+  .menu-item {
+    width: 100%;
+    padding-left: 12px;
+    margin-left: -2px;
+    &.active {
+      span {
+        color: #fa106c;
+      }
+      border-left: 4px solid #fa106c;
+    }
+    span {
+      color: #fc9107;
+      font-size: 12px;
+      line-height: 40px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}

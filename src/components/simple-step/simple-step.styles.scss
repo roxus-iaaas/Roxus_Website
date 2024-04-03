@@ -1,0 +1,31 @@
+.simple-step {
+  .line {
+    position: absolute;
+    border-top: 1px solid #fc9107;
+  }
+
+  .round-content {
+    position: absolute;
+    top: calc(20vh - 20px);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fc9107;
+    background: #43464a;
+    color: #fc9107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    @media (max-width: 1024px) {
+      width: 36px;
+      height: 36px;
+      font-size: 12px;
+    }
+
+    &.active {
+      border-color: #fa106c;
+      color: #fa106c;
+    }
+  }
+}

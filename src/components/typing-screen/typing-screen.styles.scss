@@ -1,0 +1,84 @@
+@import "../../assets/styles/base";
+
+.typing-screen {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  background: #282634;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  padding: 20vh 20vw;
+  @include Responsive(Phone_Portrait) {
+    padding: 20vh 8vw;
+  }
+  @include Responsive(Tablet_Portrait) {
+    padding: 20vh 8vw;
+  }
+
+  .typing-area {
+    width: 100%;
+  }
+
+  span {
+    font-size: 6.8vh;
+    @include Responsive(Phone_Portrait) {
+      font-size: 30px;
+    }
+    @include Responsive(Tablet_Portrait) {
+      font-size: 45px;
+    }
+    @include Responsive(Tablet_Landscape) {
+      font-size: 50px;
+    }
+
+    font-family: "Green Screen";
+    color: rgb(36, 204, 68);
+  }
+
+  .cursor {
+    font-size: 6.8vh;
+    letter-spacing: -7.4vh;
+    font-weight: normal;
+    animation: blink 0.8s infinite;
+    @include Responsive(Phone_Portrait) {
+      font-size: 31px;
+      letter-spacing: -34px;
+    }
+    @include Responsive(Phone_Landscape) {
+      font-size: 31px;
+      letter-spacing: -34px;
+    }
+    @include Responsive(Tablet_Portrait) {
+      font-size: 45px;
+      letter-spacing: -50px;
+    }
+    @include Responsive(Tablet_Landscape) {
+      font-size: 50px;
+      letter-spacing: -56px;
+    }
+  }
+  .normal-cursor {
+    font-size: 6.8vh;
+    letter-spacing: -7.4vh;
+    font-weight: normal;
+    @include Responsive(Phone_Portrait) {
+      font-size: 31px;
+      letter-spacing: -34px;
+    }
+    @include Responsive(Phone_Landscape) {
+      font-size: 31px;
+      letter-spacing: -34px;
+    }
+    @include Responsive(Tablet_Portrait) {
+      font-size: 45px;
+      letter-spacing: -50px;
+    }
+    @include Responsive(Tablet_Landscape) {
+      font-size: 50px;
+      letter-spacing: -56px;
+    }
+  }
+}

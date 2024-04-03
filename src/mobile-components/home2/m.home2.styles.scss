@@ -1,0 +1,28 @@
+.m-home2 {
+  background: url('../../assets/images/home/mobile-banner2.png');
+  background-repeat: no-repeat;
+  background-size: 25% 100%;
+  min-height: 100vh;
+  width: 100%;
+
+  .content {
+    margin-left: 30vw;
+    margin-right: 8vw;
+    margin-top: 30vh;
+    color: #43464a;
+    .title-container {
+      span {
+        font-size: 33px;
+        line-height: 40px;
+        font-weight: bold;
+      }
+    }
+    .text-container {
+      margin-top: 2vh;
+      font-size: 12px;
+    }
+    .button-container {
+      margin-top: 2vh;
+    }
+  }
+}

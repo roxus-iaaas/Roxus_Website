@@ -1,0 +1,223 @@
+@import "../../assets/styles/base";
+
+.carousel-container {
+  .solution-4 {
+    position: relative;
+    height: 100%;
+    height: 100vh;
+    &.background1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/testimonials/Enviromontel_1920x1080.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @include Responsive(iPhone678_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_667x375.jpg");
+      }
+      @include Responsive(iPhone678Plus_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_736x414.jpg");
+      }
+      @include Responsive(iPhoneX_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_812x375.jpg");
+      }
+      @include Responsive(iPad102_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_1080x810.jpg");
+      }
+      @include Responsive(iPadMini79) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_1024x768.jpg");
+      }
+      @include Responsive(iPadAir105_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_1112x834.jpg");
+      }
+      @include Responsive(iPadPro11_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_1194x834.jpg");
+      }
+      @include Responsive(iPadPro12_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_1366x1024.jpg");
+      }
+      @include Responsive(GalaxyS10Plus_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel_869x412.jpg");
+      }
+    }
+
+    &.background2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/testimonials/Trenches_1920x1080.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @include Responsive(iPhone678_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_667x375.jpg");
+      }
+      @include Responsive(iPhone678Plus_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_414x736.jpg");
+      }
+      @include Responsive(iPhoneX_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_812x375.jpg");
+      }
+      @include Responsive(GalaxyS10Plus_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_869x412.jpg");
+      }
+      @include Responsive(iPad102_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_1080x810.jpg");
+      }
+      @include Responsive(iPadMini79) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_1024x768.jpg");
+      }
+      @include Responsive(iPadAir105_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_1112x834.jpg");
+      }
+      @include Responsive(iPadPro11_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_1194x834.jpg");
+      }
+      @include Responsive(iPadPro12_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Trenches_1366x1024.jpg");
+      }
+    }
+
+    &.background3 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/testimonials/Enviromontel2_1920x1080.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @include Responsive(iPhone678_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_667x375.jpg");
+      }
+      @include Responsive(iPhone678Plus_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_736x414.jpg");
+      }
+      @include Responsive(iPhoneX_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_812x375.jpg");
+      }
+      @include Responsive(iPad102_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_1080x810.jpg");
+      }
+      @include Responsive(iPadMini79) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_1024x768.jpg");
+      }
+      @include Responsive(iPadAir105_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_1112x834.jpg");
+      }
+      @include Responsive(iPadPro11_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_1194x834.jpg");
+      }
+      @include Responsive(iPadPro12_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_1366x1024.jpg");
+      }
+      @include Responsive(GalaxyS10Plus_Landscape) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../assets/images/testimonials/Enviromontel2_869x412.jpg");
+      }
+    }
+
+    .testimonial-content {
+      width: 100%;
+      padding-top: 15vh;
+      padding-left: 20vw;
+      padding-right: 20vw;
+      color: white;
+      @include Responsive(Phone_Landscape) {
+        padding-left: 8vw;
+        padding-right: 8vw;
+      }
+
+      .image-speech {
+        img {
+          display: block;
+          margin: auto;
+          width: 25%;
+        }
+      }
+
+      .testimonial {
+        padding-top: 5vh;
+        span {
+          font-size: 24px;
+          @include Responsive(Phone_Landscape) {
+            font-size: 14px;
+          }
+          @include Responsive(FHDDesktop) {
+            font-size: 32px;
+          }
+          @include Responsive(Phone_Portrait) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .name {
+        margin-top: $m-padding-sm;
+        span {
+          font-size: 18px;
+          @include Responsive(Phone_Landscape) {
+            font-size: 12px;
+          }
+          @include Responsive(FHDDesktop) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .button-container {
+      position: absolute;
+      right: 10vw;
+      bottom: 10vh;
+      button {
+        min-width: 250px;
+        @include Responsive(FHDDesktop) {
+          min-width: 300px;
+        }
+        @include Responsive(Phone_Landscape) {
+          min-width: 200px;
+        }
+      }
+    }
+    .icon-arrow {
+      position: absolute;
+      left: 20vw;
+      bottom: 10vh;
+
+      img {
+        display: inline;
+      }
+      .left-arrow,
+      .right-arrow {
+        cursor: pointer;
+        width: 60px;
+        @include Responsive(Phone_Landscape) {
+          width: 40px;
+        }
+        @include Responsive(FHDDesktop) {
+          width: 80px;
+        }
+      }
+      .right-arrow {
+        margin-left: 1.5 * $m-padding-sm;
+      }
+    }
+  }
+}

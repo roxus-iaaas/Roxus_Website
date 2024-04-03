@@ -1,0 +1,126 @@
+@import "../../assets/styles/base";
+
+.m-home1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #282634;
+
+  .content {
+    width: 100%;
+    margin-top: 25vh;
+    @include Responsive(Tablet_Portrait) {
+      margin-top: 30vh;
+    }
+    @include Responsive(Tablet_Landscape) {
+      margin-top: 35vh;
+    }
+    .icon-arrow {
+      width: 92%;
+      padding-left: 8vw;
+      padding-bottom: $m-padding-sm;
+      border-bottom: 1px solid #fff;
+      img {
+        display: inline;
+      }
+      .left-arrow,
+      .right-arrow {
+        cursor: pointer;
+        width: 60px;
+        @include Responsive(Tablet_Portrait) {
+          width: 80px;
+        }
+        @include Responsive(Tablet_Landscape) {
+          width: 100px;
+        }
+      }
+      .right-arrow {
+        margin-left: $m-padding-sm;
+      }
+    }
+
+    .text-container {
+      margin-top: $m-padding-sm;
+      padding-left: 8vw;
+      width: 80%;
+      .main-text {
+        padding-top: $m-padding-sm;
+
+        span {
+          color: #fff;
+          font-size: 30px;
+          font-weight: bold;
+          @include Responsive(iPhoneX) {
+            font-size: 32px;
+          }
+          @include Responsive(iPhone11) {
+            font-size: 36px;
+          }
+          @include Responsive(iPhone11PM) {
+            font-size: 36px;
+          }
+          @include Responsive(Tablet_Portrait) {
+            font-size: 45px;
+          }
+          @include Responsive(Tablet_Landscape) {
+            font-size: 55px;
+          }
+        }
+      }
+      .sub-text {
+        padding-top: $m-padding-sm;
+        @include Responsive(iPhoneX) {
+          padding-top: 1.5 * $m-padding-sm;
+        }
+        @include Responsive(iPhone11) {
+          padding-top: 1.5 * $m-padding-sm;
+        }
+        @include Responsive(iPhone11PM) {
+          padding-top: 1.5 * $m-padding-sm;
+        }
+        @include Responsive(Tablet_Portrait) {
+          padding-top: 2 * $m-padding-sm;
+        }
+        @include Responsive(Tablet_Landscape) {
+          padding-top: 2 * $m-padding-sm;
+        }
+
+        p,
+        span {
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          @include Responsive(iPhoneX) {
+            font-size: 22px;
+          }
+          @include Responsive(iPhone11) {
+            font-size: 24px;
+          }
+          @include Responsive(iPhone11PM) {
+            font-size: 24px;
+          }
+          @include Responsive(Tablet_Portrait) {
+            font-size: 28px;
+          }
+          @include Responsive(Tablet_Landscape) {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+  .button-container {
+    position: absolute;
+    left: 8vw;
+    bottom: $m-button-padding;
+  }
+  .cloud-container {
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    img {
+      height: 20vh;
+    }
+  }
+}

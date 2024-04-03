@@ -1,0 +1,76 @@
+.mobile-about-2 {
+  width: 100%;
+  background: #43464a;
+  min-height: 80vh;
+  padding-bottom: 5vh;
+  .content {
+    width: 100%;
+    display: block;
+
+    .track-record {
+      width: 100%;
+      margin-top: 5vh;
+      padding-right: 8vw;
+      padding-left: 8vw;
+      text-align: right;
+      display: flex;
+      position: relative;
+      flex-direction: row-reverse;
+      span {
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+      }
+      span.orange {
+        color: #ff9206;
+      }
+    }
+
+    .statistics {
+      border-top: 1px solid #fff;
+      margin-top: 2vh;
+      width: 100%;
+      color: #fff;
+      .details {
+        padding-left: 8vw;
+        width: 55vw;
+
+        .margin-5vh {
+          margin-top: 5vh;
+        }
+
+        .gradient {
+          padding-top: 2vh;
+          font-size: 60px;
+          line-height: 70px;
+          font-weight: bold;
+
+          &.color1 {
+            background: linear-gradient(to right, #fc275a 0%, #fd4543 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          &.color2 {
+            background: linear-gradient(to right, #fd5437 0%, #fe6827 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          &.color3 {
+            background: linear-gradient(to right, #ff8313 0%, #ff9306 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .text {
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../assets/styles/base";
+
+.take-next-step {
+  width: 100%;
+  position: absolute;
+  padding-left: 20vw;
+  padding-right: 10vw;
+  bottom: 18vh;
+  @include Responsive(Phone_Landscape) {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    bottom: 25vh;
+  }
+
+  .text-container {
+    span {
+      font-size: 30px;
+      @extend %gradient-text;
+      @include Responsive(Phone_Landscape) {
+        font-size: 20px;
+      }
+      @include Responsive(Tablet_Portrait) {
+        font-size: 24px;
+      }
+      @include Responsive(FHDDesktop) {
+        font-size: 40px;
+      }
+    }
+  }
+}

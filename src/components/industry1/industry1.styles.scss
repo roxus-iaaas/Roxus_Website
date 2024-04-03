@@ -1,0 +1,38 @@
+.industry-1 {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url('../../assets/images/customers/houses.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .content {
+    margin-top: 75px;
+    padding-top: 10vh;
+    width: 100%;
+    padding-left: 35vw;
+    padding-right: 20vw;
+    color: white;
+
+    .left-content {
+      .large-text {
+        font-size: 40px;
+        line-height: 50px;
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          font-size: 50px;
+          line-height: 60px;
+        }
+        font-weight: bold;
+      }
+    }
+
+    .right-content {
+      padding-top: 30px;
+      text-align: right;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 18px;
+        padding-top: 50px;
+      }
+    }
+  }
+}

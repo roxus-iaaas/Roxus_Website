@@ -1,0 +1,30 @@
+.mobile-industry-2 {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  min-height: 115vh;
+  padding-bottom: 5vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  .title {
+    width: 100%;
+    margin-top: 5vh;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    span {
+      font-size: 22px;
+      line-height: 30px;
+      color: #fc9107;
+      font-weight: bold;
+    }
+  }
+
+  .product-list {
+    margin-top: 3vh !important;
+    .product-title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}

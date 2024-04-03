@@ -1,0 +1,59 @@
+@import "../../assets/styles/base";
+
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.executive-modal {
+  width: 90% !important;
+  @include Responsive(Phone_Portrait) {
+    margin-bottom: 12px;
+  }
+
+  .executive-img {
+    width: 80%;
+    @include Responsive(Phone_Portrait) {
+      width: 80%;
+      margin-bottom: 12px;
+    }
+  }
+
+  .name {
+    margin-bottom: 24px;
+    @include Responsive(Phone_Portrait) {
+      margin-bottom: 12px;
+    }
+    span {
+      font-size: 50px;
+      font-weight: bold;
+      @include Responsive(FHDDesktop) {
+        font-size: 60px;
+      }
+      @include Responsive(Phone_Portrait) {
+        font-size: 28px;
+      }
+    }
+  }
+  .occupation {
+    margin-bottom: 24px;
+    @include Responsive(Phone_Portrait) {
+      margin-bottom: $m-padding-sm;
+    }
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #7f7f7f;
+      @include Responsive(FHDDesktop) {
+        font-size: 30px;
+      }
+      @include Responsive(Phone_Portrait) {
+        font-size: 20px;
+      }
+    }
+  }
+  .long-desc {
+    font-size: 18px;
+    @include Responsive(FHDDesktop) {
+      font-size: 22px;
+    }
+  }
+}

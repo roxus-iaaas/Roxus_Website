@@ -1,0 +1,180 @@
+@import "../../assets/styles/base";
+
+.read-more {
+  width: 100%;
+  height: 100%;
+  padding-bottom: $m-padding;
+  background: #fff;
+  position: relative;
+
+  &.border-yellow {
+    .read-more-text {
+      color: $orange;
+    }
+  }
+
+  &.border-yellow.top {
+    border-top: 1px solid $orange;
+    .round-content {
+      border: 1px solid $orange;
+      color: $orange;
+    }
+    .title {
+      color: $orange;
+    }
+  }
+
+  &.border-yellow.left {
+    border-left: 1px solid $orange;
+    .round-content {
+      border: 1px solid $orange;
+      color: $orange;
+    }
+    .title {
+      color: $orange;
+    }
+  }
+
+  &.border-pink {
+    .read-more-text {
+      color: $pink;
+    }
+  }
+
+  &.border-pink.top {
+    border-top: 1px solid $pink;
+    .round-content {
+      border: 1px solid $pink;
+      color: $pink;
+    }
+    .title {
+      color: $pink;
+    }
+  }
+
+  &.top {
+    margin-top: 20px;
+    border-top: 1px solid #fa106c;
+    width: 100%;
+    position: relative;
+
+    .round-content {
+      //   left: 10vw;
+      right: 0;
+      position: absolute;
+      top: -20px;
+      border: 1px solid #fa106c;
+      width: 40px;
+      height: 40px;
+      @media (max-width: 1024px) {
+        top: -18px;
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+      }
+      @include Responsive(FHDDesktop) {
+        top: -30px;
+        border: 2px solid #fa106c;
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+      }
+
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fa106c;
+    }
+    &.right {
+      right: 0;
+    }
+  }
+
+  &.border-pink.left {
+    border-left: 1px solid #fa106c;
+    .round-content {
+      border: 1px solid #fa106c;
+      color: #fa106c;
+    }
+    .title {
+      color: #fa106c;
+    }
+  }
+
+  &.left {
+    margin-top: 20px;
+    border-left: 1px solid #fa106c;
+    width: 100%;
+    position: relative;
+    .round-content {
+      position: absolute;
+      left: -20px;
+      border: 1px solid #fa106c;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+
+      @include Responsive(Phone_Portrait) {
+        left: -18px;
+        width: 36px;
+        height: 36px;
+      }
+      @include Responsive(FHDDesktop) {
+        left: -30px;
+        border: 2px solid #fa106c;
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+      }
+
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fa106c;
+    }
+  }
+
+  .border-content {
+    .text {
+      padding-left: 40px;
+      margin-top: 25px;
+      width: 100%;
+      @include Responsive(Phone_Portrait) {
+        padding-left: 36px;
+      }
+      @include Responsive(FHDDesktop) {
+        margin-top: 50px;
+        padding-left: 60px;
+      }
+      .title {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bold;
+        @include Responsive(FHDDesktop) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+      .mainDesc,
+      .fullDesc {
+        margin-top: 12px;
+        font-size: 18px;
+        @include Responsive(Phone_Portrait) {
+          font-size: 16px;
+        }
+        @include Responsive(FHDDesktop) {
+          font-size: 28px;
+        }
+        .read-more-text {
+          text-transform: uppercase;
+          cursor: pointer;
+          font-style: bold;
+        }
+      }
+    }
+  }
+}

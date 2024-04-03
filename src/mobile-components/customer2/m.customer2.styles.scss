@@ -1,0 +1,84 @@
+@import "../../assets/styles/base";
+
+.mobile-customer-2 {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  padding-top: $m-padding;
+  padding-bottom: $m-padding;
+
+  .content {
+    margin-left: 8vw;
+    width: 92vw;
+
+    .wrap-content {
+      border-top: 1px solid #fc9107;
+    }
+
+    .wrap-content-pink {
+      border-top: 1px solid #fa106c;
+    }
+
+    .text-content {
+      padding-right: 8vw;
+      padding-top: 3.5vh;
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .desc {
+        font-size: 16px;
+      }
+    }
+    .round-content {
+      position: absolute;
+      top: -20px;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      background: white;
+      border: 1px solid #fc9107;
+      color: #fc9107;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    &.first {
+      position: relative;
+      margin-top: $m-padding;
+      .question-mark {
+        position: absolute;
+        right: 8vw;
+        top: -2vh;
+        img {
+          height: 160px;
+        }
+      }
+    }
+
+    &.second {
+      margin-top: $m-padding;
+      position: relative;
+      .round-content {
+        border: 1px solid #fa106c;
+        color: #fa106c;
+      }
+    }
+
+    &.third {
+      position: relative;
+      .check {
+        position: absolute;
+        right: 8vw;
+        top: -2vh;
+        img {
+          height: 160px;
+        }
+      }
+      margin-top: $m-padding;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.mobile-complex-step {
+  position: absolute;
+  right: 50vw;
+  top: 15vh;
+  .line {
+    width: 4px;
+    height: 80vh;
+    background: -webkit-linear-gradient(bottom, #fc9107 0%, #fa106c 100%);
+    background: -o-linear-gradient(bottom, #fc9107 0%, #fa106c 100%);
+    background: -ms-linear-gradient(bottom, #fc9107 0%, #fa106c 100%);
+    background: linear-gradient(to bottom, #fc9107 0%, #fa106c 100%);
+  }
+}

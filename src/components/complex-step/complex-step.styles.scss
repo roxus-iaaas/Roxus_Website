@@ -1,0 +1,20 @@
+.complex-step {
+  position: absolute;
+  right: 0;
+  top: calc(30vh + 125px);
+  @media (min-width: 1800px) and (max-width: 2560px) {
+    top: calc(30vh + 175px);
+  }
+
+  .line {
+    width: 80vw;
+    @media (min-width: 400px) and (max-width: 1200px) {
+      font-size: 92vw;
+    }
+    height: 4px;
+    background: -webkit-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+    background: -o-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+    background: -ms-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+    background: linear-gradient(to right, #fc9107 0%, #fa106c 100%);
+  }
+}

@@ -1,0 +1,58 @@
+@import "./responsive";
+@import "./animate";
+
+// Color
+$pink: #fa106c;
+$orange: #fc9107;
+$black: #43464a;
+$secondary: #aaa;
+$black-background: #282634;
+
+// Font Style
+@font-face {
+  font-family: "Green Screen";
+  src: url("../fonts/Greenscr.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+// Font Size
+// Phone Portrait
+$pp-font-size-sm: 16px;
+$pp-font-size-md: 20px;
+$pp-font-size-lg: 24px;
+// Phone Landscape
+$pl-font-size-sm: 16px;
+$pl-font-size-md: 20px;
+$pl-font-size-lg: 24px;
+// Tablet Portrait
+$tp-font-size-sm: 20px;
+$tp-font-size-md: 28px;
+$tp-font-size-lg: 40px;
+
+// Tablet Landscape
+$tl-font-size-sm: 24px;
+$tl-font-size-md: 32px;
+$tl-font-size-lg: 50px;
+
+// Padding
+// Mobile
+$m-padding-sm: 12px;
+$m-padding: 35px;
+$m-padding-with-line: 40px;
+$padding-header: 75px;
+// Bottom Button
+$m-button-padding: 5vh;
+
+@include Responsive(Phone_Portrait) {
+  font-size: 16px;
+}
+
+.no-display {
+  display: none;
+}
+
+%gradient-text {
+  background: linear-gradient(to right, #ff9009 0%, #fb126b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

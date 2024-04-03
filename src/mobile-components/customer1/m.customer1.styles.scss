@@ -1,0 +1,36 @@
+.mobile-customer-1 {
+  width: 100%;
+  background: url('../../assets/images/customers/mobile-banner.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 45vh;
+  color: #fff;
+  padding-bottom: 5vh;
+
+  .content {
+    width: 100%;
+    padding-top: 10vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+
+    .left-content {
+      width: 60vw;
+      font-weight: bold;
+      .title {
+        font-size: 33px;
+        line-height: 40px;
+      }
+    }
+
+    .right-content {
+      margin-top: 3vh;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+      div {
+        width: 60vw;
+      }
+    }
+  }
+}

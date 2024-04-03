@@ -1,0 +1,108 @@
+.step-desc {
+  position: absolute;
+  top: -25px;
+  .round-step {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fa106c;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: " ";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -2;
+      background: #503b9a;
+      background: -moz-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0%, #fc9107),
+        color-stop(100%, #fa106c)
+      );
+      background: -webkit-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: -o-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: -ms-linear-gradient(right, #fc9107 0%, #fa106c 100%);
+      background: linear-gradient(to right, #fc9107 0%, #fa106c 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9107', endColorstr='#fa106c',GradientType=1 );
+    }
+
+    &:after {
+      top: 3px;
+      bottom: 3px;
+      left: 3px;
+      right: 3px;
+      background-color: white;
+      z-index: -1;
+      opacity: 1;
+      transition: all 0.6s ease-in-out;
+    }
+
+    &:hover:after {
+      opacity: 0;
+    }
+  }
+
+  .step {
+    width: 15vw;
+    &.up {
+      .step-content {
+        width: 100%;
+        position: absolute;
+        text-align: left;
+        left: calc(0);
+        top: -120px;
+        @media (min-width: 400px) and (max-width: 1200px) {
+          top: -100px;
+        }
+      }
+    }
+    &.down {
+      .step-content {
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        left: calc(-15vw + 50px);
+        top: 70px;
+      }
+    }
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 20px;
+      }
+      @media (min-width: 400px) and (max-width: 1200px) {
+        font-size: 14px;
+      }
+    }
+    .description {
+      font-size: 16px;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 18px;
+      }
+      @media (min-width: 400px) and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+  }
+}

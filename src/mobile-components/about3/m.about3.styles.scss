@@ -1,0 +1,38 @@
+.mobile-about-3 {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  padding-bottom: 6vh;
+
+  .percent {
+    position: absolute;
+    left: 8vw;
+    z-index: 1;
+    span {
+      font-size: 100px;
+      font-weight: 700;
+      background: linear-gradient(to right, #ff9009 0%, #fb126b 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .laptop {
+    position: absolute;
+    left: 8vw;
+    top: 7vh;
+
+    img {
+      height: 32vh;
+    }
+  }
+
+  .text {
+    width: 100%;
+    margin-top: 40vh;
+    padding-left: 8vw;
+    width: 55vw;
+    font-size: 12px;
+  }
+}

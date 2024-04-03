@@ -1,0 +1,48 @@
+@import "../../assets/styles/base";
+
+.mobile-about-1 {
+  width: 100%;
+  background: #fff;
+  padding: $m-padding 8vw;
+
+  .content {
+    display: block;
+
+    .intro {
+      width: 80vw;
+      position: relative;
+
+      .image-arrow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 180px;
+      }
+      .text {
+        padding-top: 25px;
+        span {
+          color: #43464a;
+          font-size: 33px;
+          line-height: 40px;
+          font-weight: bold;
+        }
+        span.orange {
+          color: #ff9206;
+        }
+      }
+    }
+
+    .description {
+      margin-top: $m-padding-sm;
+      border-top: 1px solid #ff9206;
+      padding-right: 8vw;
+      .title {
+        padding-top: 2vh;
+        color: #f9106c;
+        font-weight: bold;
+        font-size: 4vh;
+        margin-bottom: 1vh;
+      }
+    }
+  }
+}

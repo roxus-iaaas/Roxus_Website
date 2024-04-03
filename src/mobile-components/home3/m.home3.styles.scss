@@ -1,0 +1,240 @@
+@import "../../assets/styles/base";
+
+.m-home3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  &.background1 {
+    background: url("../../assets/images/solutions/CusEx_1080x1920.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include Responsive(iPhone678) {
+      background: url("../../assets/images/solutions/CusEx_375x667.jpg");
+    }
+    @include Responsive(iPhone678Plus) {
+      background: url("../../assets/images/solutions/CusEx_414x736.jpg");
+    }
+    @include Responsive(iPhoneX) {
+      background: url("../../assets/images/solutions/CusEx_375x812.jpg");
+    }
+    @include Responsive(GalaxyS10Plus) {
+      background: url("../../assets/images/solutions/CusEx_412x869.jpg");
+    }
+    @include Responsive(iPadMini79) {
+      background: url("../../assets/images/solutions/CusEx_768x1024.jpg");
+    }
+    @include Responsive(iPad102) {
+      background: url("../../assets/images/solutions/CusEx_810x1080.jpg");
+    }
+    @include Responsive(iPadPro12) {
+      background: url("../../assets/images/solutions/CusEx_1024x1366.jpg");
+    }
+  }
+
+  &.background2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/images/solutions/Disco_1080x1920.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include Responsive(iPhone678) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_375x667.jpg");
+    }
+    @include Responsive(iPhone678Plus) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_414x736.jpg");
+    }
+    @include Responsive(iPhoneX) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_375x812.jpg");
+    }
+    @include Responsive(GalaxyS10Plus) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_412x869.jpg");
+    }
+    @include Responsive(iPadMini79) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_768x1024.jpg");
+    }
+    @include Responsive(iPad102) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_810x1080.jpg");
+    }
+    @include Responsive(iPadPro12) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/Disco_1024x1366.jpg");
+    }
+  }
+
+  &.background3 {
+    background: url("../../assets/images/solutions/Pace_1080x1920.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include Responsive(iPhone678) {
+      background: url("../../assets/images/solutions/Pace_375x667.jpg");
+    }
+    @include Responsive(iPhone678Plus) {
+      background: url("../../assets/images/solutions/Pace_414x736.jpg");
+    }
+    @include Responsive(iPhoneX) {
+      background: url("../../assets/images/solutions/Pace_375x812.jpg");
+    }
+    @include Responsive(GalaxyS10Plus) {
+      background: url("../../assets/images/solutions/Pace_412x869.jpg");
+    }
+    @include Responsive(iPadMini79) {
+      background: url("../../assets/images/solutions/Pace_768x1024.jpg");
+    }
+    @include Responsive(iPad102) {
+      background: url("../../assets/images/solutions/Pace_810x1080.jpg");
+    }
+    @include Responsive(iPadPro12) {
+      background: url("../../assets/images/solutions/Pace_1024x1366.jpg");
+    }
+  }
+
+  &.background4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/images/solutions/TTV_1080x1920.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include Responsive(iPhone678) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_375x667.jpg");
+    }
+    @include Responsive(iPhone678Plus) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_414x736.jpg");
+    }
+    @include Responsive(iPhoneX) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_375x812.jpg");
+    }
+    @include Responsive(GalaxyS10Plus) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_412x869.jpg");
+    }
+    @include Responsive(iPadMini79) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_768x1024.jpg");
+    }
+    @include Responsive(iPad102) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_810x1080.jpg");
+    }
+    @include Responsive(iPadPro12) {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../assets/images/solutions/TTV_1024x1366.jpg");
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 10vh;
+    @include Responsive(Tablet_Portrait) {
+      margin-top: 30vh;
+    }
+    @include Responsive(Tablet_Landscape) {
+      margin-top: 35vh;
+    }
+    .icon-arrow {
+      width: 92%;
+      padding-left: 8vw;
+      padding-bottom: $m-padding-sm;
+      border-bottom: 1px solid #fff;
+      img {
+        display: inline;
+      }
+      .left-arrow,
+      .right-arrow {
+        cursor: pointer;
+        width: 60px;
+        @include Responsive(Tablet_Portrait) {
+          width: 80px;
+        }
+        @include Responsive(Tablet_Landscape) {
+          width: 100px;
+        }
+      }
+      .right-arrow {
+        margin-left: $m-padding-sm;
+      }
+    }
+
+    .text-container {
+      margin-top: $m-padding-sm;
+      padding-left: 8vw;
+      width: 80%;
+      .main-text {
+        padding-top: $m-padding-sm;
+
+        span {
+          color: #fff;
+          font-size: 30px;
+          font-weight: bold;
+          @include Responsive(iPhoneX) {
+            font-size: 32px;
+          }
+          @include Responsive(iPhone11) {
+            font-size: 36px;
+          }
+          @include Responsive(iPhone11PM) {
+            font-size: 36px;
+          }
+          @include Responsive(Tablet_Portrait) {
+            font-size: 45px;
+          }
+          @include Responsive(Tablet_Landscape) {
+            font-size: 55px;
+          }
+        }
+      }
+      .sub-text {
+        padding-top: $m-padding-sm;
+        @include Responsive(iPhoneX) {
+          padding-top: 1.5 * $m-padding-sm;
+        }
+        @include Responsive(iPhone11) {
+          padding-top: 1.5 * $m-padding-sm;
+        }
+        @include Responsive(iPhone11PM) {
+          padding-top: 1.5 * $m-padding-sm;
+        }
+        @include Responsive(Tablet_Portrait) {
+          padding-top: 2 * $m-padding-sm;
+        }
+        @include Responsive(Tablet_Landscape) {
+          padding-top: 2 * $m-padding-sm;
+        }
+
+        span {
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          @include Responsive(iPhoneX) {
+            font-size: 22px;
+          }
+          @include Responsive(iPhone11) {
+            font-size: 24px;
+          }
+          @include Responsive(iPhone11PM) {
+            font-size: 24px;
+          }
+          @include Responsive(Tablet_Portrait) {
+            font-size: 28px;
+          }
+          @include Responsive(Tablet_Landscape) {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+  .button-container {
+    position: absolute;
+    left: 8vw;
+    bottom: $m-button-padding;
+  }
+}

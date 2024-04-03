@@ -1,0 +1,58 @@
+@import "../../assets/styles/base";
+
+.mobile-industry-2 {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  padding-top: $m-padding;
+  padding-bottom: $m-padding-with-line;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  .title {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    span {
+      font-size: 22px;
+      line-height: 30px;
+      color: $orange;
+      font-weight: bold;
+      @include Responsive(Tablet_Portrait) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @include Responsive(Tablet_Landscape) {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .product-list {
+    margin-top: $m-padding !important;
+
+    .image-container {
+      img {
+        width: 60%;
+      }
+    }
+    .product-title {
+      font-weight: bold;
+      @include Responsive(Tablet_Portrait) {
+        font-size: 24px;
+      }
+      @include Responsive(Tablet_Landscape) {
+        font-size: 30px;
+      }
+    }
+    .description {
+      @include Responsive(Tablet_Portrait) {
+        font-size: 20px;
+      }
+      @include Responsive(Tablet_Landscape) {
+        font-size: 24px;
+      }
+    }
+  }
+}

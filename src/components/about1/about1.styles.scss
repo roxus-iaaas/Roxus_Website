@@ -1,0 +1,76 @@
+@import "../../assets/styles/base";
+
+.about-us-1 {
+  width: 100%;
+  background: #fff;
+  min-height: 600px;
+  padding-bottom: $m-padding-sm;
+  padding-top: $m-padding;
+  @include Responsive(FHDDesktop) {
+    min-height: 800px;
+  }
+
+  .content {
+    display: block;
+    padding-left: 10vw;
+
+    .intro {
+      width: 350px;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        width: 400px;
+      }
+      position: relative;
+
+      .image-arrow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 230px;
+        z-index: 1;
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          height: 270px;
+        }
+      }
+      .text {
+        padding-top: 20px;
+        span {
+          color: #43464a;
+          font-size: 40px;
+          line-height: 60px;
+          font-weight: bold;
+          @media (min-width: 1800px) and (max-width: 2560px) {
+            font-size: 50px;
+            line-height: 70px;
+          }
+        }
+        span.orange {
+          color: #ff9206;
+        }
+      }
+    }
+
+    .description {
+      width: 100%;
+      margin-top: 60px;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        margin-top: 80px;
+      }
+      border-top: 1px solid #ff9206;
+      padding-top: 20px;
+      .title {
+        color: #f9106c;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 1vh;
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          font-size: 40px;
+        }
+      }
+      .text {
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.vertical-line {
+  .line {
+    position: absolute;
+    border-left: 1px solid #fa106c;
+    z-index: 6;
+  }
+
+  .round-content {
+    position: absolute;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    @media (max-width: 1024px) {
+      top: -18px;
+      width: 36px;
+      height: 36px;
+      font-size: 12px;
+    }
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fa106c;
+  }
+}

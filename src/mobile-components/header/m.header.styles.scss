@@ -1,0 +1,39 @@
+.m-header {
+  &.no-display {
+    display: none;
+  }
+
+  align-content: center;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  background: #fff;
+
+  &.transparent {
+    background: transparent;
+    position: absolute;
+  }
+
+  .header-content {
+    width: 84%;
+    padding: 15px 0 15px 0;
+
+    .burger-container {
+      margin: auto;
+
+      div {
+        width: 20px;
+        height: 2px;
+        background-color: #43464a;
+        margin: 4px 0;
+      }
+      &.white div {
+        background-color: #fff;
+      }
+    }
+
+    .logo {
+      cursor: pointer;
+    }
+  }
+}

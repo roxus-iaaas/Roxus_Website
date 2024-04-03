@@ -1,0 +1,52 @@
+.common-header {
+  align-content: center;
+  // position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  background: white;
+  // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  .header-content {
+    width: 80%;
+    padding: 20px 0 20px 0;
+    @media (min-width: 1800px) and (max-width: 2560px) {
+      padding: 30px 0 30px 0;
+    }
+
+    img {
+      height: 25px;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        height: 35px;
+      }
+    }
+
+    .burger {
+      cursor: pointer;
+      &:hover {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+
+    .logo {
+      cursor: pointer;
+    }
+
+    .burger-container {
+      cursor: pointer;
+      margin: auto;
+
+      div {
+        width: 20px;
+        height: 2px;
+        background-color: #43464a;
+        margin: 4px 0;
+      }
+      &.white div {
+        background-color: #fff;
+      }
+    }
+  }
+}

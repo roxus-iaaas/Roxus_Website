@@ -1,0 +1,46 @@
+@import "../../assets/styles/base";
+
+.mobile-about-5 {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  min-height: calc(130vh);
+  height: 100%;
+  padding-bottom: $m-padding;
+  padding-top: $m-padding;
+  padding-left: 8vw;
+  padding-right: 8vw;
+
+  .title {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    span {
+      font-size: 22px;
+      line-height: 30px;
+      @include Responsive(Tablet_Portrait) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @include Responsive(Tablet_Landscape) {
+        font-size: 50px;
+        line-height: 60px;
+      }
+      color: #fa106c;
+      font-weight: bold;
+    }
+  }
+  .process {
+    width: 100%;
+    height: 100%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .button {
+    position: absolute;
+    left: 8vw;
+    bottom: $m-padding;
+  }
+}

@@ -1,0 +1,36 @@
+.home2 {
+  background-image: url("../../assets/images/home/banner2-photo.png");
+  background-repeat: no-repeat;
+  background-size: 35% 100%;
+  min-height: calc(100vh);
+  position: relative;
+  flex-direction: column !important;
+
+  .ml-40vw {
+    margin-left: 38vw;
+  }
+
+  .content {
+    padding-top: 75px;
+    display: block;
+    .title {
+      width: 30%;
+      span {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: bold;
+        @media (min-width: 1800px) and (max-width: 2560px) {
+          font-size: 50px;
+          line-height: 70px;
+        }
+      }
+    }
+
+    .text {
+      width: 30%;
+      @media (min-width: 1800px) and (max-width: 2560px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

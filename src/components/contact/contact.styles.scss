@@ -1,0 +1,64 @@
+@import "../../assets/styles/base";
+
+.contact {
+  width: 100%;
+  padding-top: 50px;
+  padding-right: 10vw;
+
+  @include Responsive(Phone_Landscape) {
+    padding-top: $m-padding;
+  }
+
+  .content {
+    display: block;
+    width: 60vw;
+    padding-left: 10vw;
+    .hubspot-form {
+      margin-top: $m-padding;
+    }
+
+    .hs-form-field {
+      @include Responsive(FHDDesktop) {
+        font-size: 18px;
+      }
+    }
+  }
+  .title {
+    span {
+      color: #fa106c;
+      font-weight: bold;
+      font-size: 30px;
+      @include Responsive(FHDDesktop) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .find-us {
+    width: 20vw;
+    @include Responsive(FHDDesktop) {
+      font-size: 18px;
+    }
+
+    @include Responsive(Phone_Landscape) {
+      padding-left: 10vw;
+      padding-top: $m-padding;
+      padding-bottom: $m-padding;
+    }
+
+    .address {
+      margin-top: 24px;
+      .country {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .email {
+      margin-top: $m-padding;
+      margin-bottom: $m-padding;
+      .support-content {
+        margin-top: $m-padding-sm;
+      }
+    }
+  }
+}

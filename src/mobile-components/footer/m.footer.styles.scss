@@ -1,0 +1,49 @@
+@import "../../assets/styles/base";
+
+.mobile-footer {
+  min-height: 10vh;
+  height: 100%;
+  width: 100%;
+  background: $black-background;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  font-size: $pp-font-size-sm;
+  @include Responsive(Tablet_Portrait) {
+    font-size: $tp-font-size-sm;
+  }
+  @include Responsive(Tablet_Landscape) {
+    font-size: $tl-font-size-sm;
+  }
+  .row-footer {
+    height: 100%;
+    width: 100%;
+
+    padding-top: 2 * $m-padding-sm;
+    padding-bottom: 2 * $m-padding-sm;
+    span {
+      color: white;
+    }
+    .link {
+      cursor: pointer;
+    }
+
+    .company-name {
+      color: $secondary;
+    }
+
+    .right-section {
+      margin-top: $m-padding-sm;
+      margin-bottom: $m-padding-sm;
+      .linkedin {
+        width: 30px;
+        @include Responsive(Tablet_Portrait) {
+          width: 40px;
+        }
+        @include Responsive(Tablet_Landscape) {
+          width: 50px;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+}

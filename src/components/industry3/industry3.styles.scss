@@ -1,0 +1,33 @@
+.industry-3 {
+  width: 100%;
+  background: #fff;
+  min-height: 85vh;
+  background-image: url('../../assets/images/about/houses.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .content {
+    margin-top: 24vh;
+    margin-left: 35vw;
+    .title {
+      width: 35%;
+      span {
+        font-size: 40px;
+        line-height: 50px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+    .text {
+      margin-top: 24px;
+      width: 35%;
+      span {
+        color: white;
+      }
+    }
+    .button {
+      margin-top: 24px;
+    }
+  }
+}

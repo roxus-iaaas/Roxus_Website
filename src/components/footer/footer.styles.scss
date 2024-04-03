@@ -1,0 +1,56 @@
+@import "../../assets/styles/base";
+
+.footer {
+  min-height: 10vh;
+  width: 100%;
+  background: $black-background;
+
+  &.bottom {
+    @include Responsive(HDDesktop) {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .row-footer {
+    height: 100%;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: $m-padding-sm;
+    padding-bottom: $m-padding-sm;
+    span {
+      color: white;
+    }
+    .left-section {
+      .link {
+        cursor: pointer;
+        @include Responsive(FHDDesktop) {
+          font-size: 24px;
+        }
+      }
+
+      .company-name {
+        margin-top: $m-padding-sm;
+        color: $secondary;
+        @include Responsive(FHDDesktop) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .right-section {
+      div {
+        float: right;
+      }
+
+      .linkedin {
+        width: 25px;
+        cursor: pointer;
+        @include Responsive(FHDDesktop) {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
